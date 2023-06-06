@@ -1,0 +1,108 @@
+/* Global */
+
+$font-header: 'Raleway', sans-serif;
+$font-text: 'Roboto', sans-serif;
+
+$color-light: rgb(241, 233, 233);
+$color-dark: rgb(32, 32, 32);
+$color-green: rgb(52, 197, 112);
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    font-family: $font-text;
+    line-height: 1.7;
+    font-size: 16px;
+    color: $color-dark;
+}
+
+button {
+    border: solid 2px;
+    font-size: 14px;
+    font-family: $font-text;
+    font-weight: bold;
+    color: $color-light;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.btn-1 {
+    border-color: $color-light;
+    background: none;
+}
+
+/* Splash */
+
+.splash {
+    background-image: url('https://images.pexels.com/photos/515414/pexels-photo-515414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    height: 100vh;
+    position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    .navigation {
+        display: flex;
+
+        .nav-title {
+            color: $color-light;
+            flex: 0 0 33.333%;
+            span {
+                color: $color-green;
+            }
+        }
+        .container {
+            flex: 0 0 66.666%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    margin-left: 26px;
+
+                    a {
+                        text-decoration: none;
+                        color: $color-light;
+                        font-size: 14px;
+                        &:hover {
+                            color: $color-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .splash-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-light;
+
+        .splash-title {
+            font-family: $font-header;
+            font-weight: lighter;
+            font-size: 42px;
+            margin: 0;
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .splash-subtitle {
+            font-size: 20px;
+            font-weight: lighter;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+    }
+}   
