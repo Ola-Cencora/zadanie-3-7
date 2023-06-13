@@ -6,6 +6,7 @@ $font-text: 'Roboto', sans-serif;
 $color-light: rgb(241, 233, 233);
 $color-dark: rgb(32, 32, 32);
 $color-green: rgb(52, 197, 112);
+$color-grey: rgb(230, 227, 227);
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -17,8 +18,13 @@ body {
     background-color: white;
     font-family: $font-text;
     line-height: 1.7;
-    font-size: 16px;
-    color: $color-dark;
+    font-size: 12px;
+    color: grey;
+}
+
+.container {
+    max-width: 1040px;
+    margin: 50px auto;
 }
 
 button {
@@ -34,6 +40,36 @@ button {
 .btn-1 {
     border-color: $color-light;
     background: none;
+    &:hover {
+        border-color: $color-green;
+        color: $color-green;
+    }
+}
+
+.btn-2 {
+    background: $color-green;
+    border-color: $color-green;
+    &:hover {
+        background-color: white;
+        color: $color-green;
+    }
+}
+
+.section-title {
+    font-family: $font-header;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.section-description::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    transform: translateX(-50%);
+    background: $color-green;
+    bottom: -120px;
 }
 
 /* Splash */
@@ -56,7 +92,7 @@ button {
                 color: $color-green;
             }
         }
-        .container {
+        .nav {
             flex: 0 0 66.666%;
             display: flex;
             align-items: center;
@@ -106,3 +142,42 @@ button {
         }
     }
 }   
+
+/* About */
+
+.about {
+    .section-description {
+        margin-bottom: 50px;
+    }
+    .row {
+        display: flex;
+        display: row;
+        margin-bottom: 56px;
+        
+        .box {
+            position: relative;
+            margin: 0 20px;
+
+            i {
+                font-size: 30px;
+                color: grey;
+                width: 120px;
+                height: 120px;
+                line-height: 120px;
+                background-color: $color-grey;
+                border-radius: 50%;
+                margin: 30px 0;
+                &:hover {
+                    color: $color-light;
+                    background-color: $color-green;
+                }
+            }
+
+            .section-subtitle {
+                font-size: 18px;
+                color: $color-dark
+            }
+
+        }
+    }
+}
