@@ -181,3 +181,36 @@ button {
         }
     }
 }
+
+/* More */
+
+.grey {
+    background-color: $color-grey;
+    padding: 24px 0;
+}
+
+.more {
+
+    .row {
+        display: flex;
+        display: row;
+
+        .more-image {
+            width: 50%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .box {
+            flex: 0 0 50%;
+            text-align: left;
+            p {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
