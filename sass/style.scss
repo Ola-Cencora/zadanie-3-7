@@ -27,6 +27,11 @@ body {
     margin: 50px auto;
 }
 
+.grey {
+    background-color: $color-grey;
+    padding: 24px 0;
+}
+
 button {
     border: solid 2px;
     font-size: 14px;
@@ -184,11 +189,6 @@ button {
 
 /* More */
 
-.grey {
-    background-color: $color-grey;
-    padding: 24px 0;
-}
-
 .more {
 
     .row {
@@ -198,6 +198,7 @@ button {
         .more-image {
             width: 50%;
             height: 100%;
+            
             img {
                 width: 100%;
                 height: 100%;
