@@ -214,3 +214,50 @@ button {
         }
     }
 }
+
+/* Quote */
+
+.quote {
+    background-image: url('https://images.pexels.com/photos/842339/pexels-photo-842339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    height: 440px;
+    position: relative;
+    &::after { 
+        content: "";
+        background-color: $color-dark;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+        left: 0;
+        top: 0;
+    }
+
+    .quote-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        .quote-img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        .quote-text {
+            font-size: 20px;
+            font-weight: normal;
+            color: white;
+            margin: 16px auto;
+            span {
+                color: $color-green;
+            }
+        }
+
+        p {
+            color: white;
+        }
+    }
+}
