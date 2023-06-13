@@ -262,3 +262,43 @@ button {
         }
     }
 }
+
+/* Services */
+
+.services {
+// section-description before missing    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .box {
+            flex: 0 0 50%;
+            display: flex;
+            margin-top: 46px;
+
+            i {
+                font-size: 18px;
+                color: $color-green;
+                height: 60px;
+                width: 60px;
+                line-height: 60px;
+                background-color: white;
+                border-radius: 50%;
+                margin: 0 30px;
+                &:hover {
+                    background-color: $color-green;
+                    color: white;
+                }
+            }
+
+            .box-inner {
+                text-align: left;
+
+                .section-title {
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
