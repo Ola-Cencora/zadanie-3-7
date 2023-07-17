@@ -64,6 +64,7 @@ button {
     font-family: $font-header;
     font-weight: normal;
     font-size: 36px;
+    margin-top: 50px;
 }
 
 .section-description::before {
@@ -156,7 +157,6 @@ button {
     }
     .row {
         display: flex;
-        display: row;
         margin-bottom: 56px;
         
         .box {
@@ -298,6 +298,25 @@ button {
                     margin-top: 0;
                     margin-bottom: 20px;
                 }
+            }
+        }
+    }
+}
+
+/* Team */
+
+.team {
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        .gallery-img {
+            width: 20%;
+            &:hover { // do naprawienia
+                background-color: $color-green;
+                opacity: 0.5;
             }
         }
     }
