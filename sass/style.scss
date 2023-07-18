@@ -409,3 +409,44 @@ button {
         }
     }
 }
+
+/* Try */
+
+.try {
+    background-image: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    height: 440px;
+    position: relative;
+    &::after { 
+        content: "";
+        background-color: $color-dark;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.9;
+        left: 0;
+        top: 0;
+    }
+
+    .try-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        .try-text {
+            font-size: 36px;
+            font-weight: normal;
+            color: white;
+            margin: 40px auto;
+        }
+
+        .try-button {
+            &:hover {
+                background: none;
+            }
+        }
+    }
+}
+
