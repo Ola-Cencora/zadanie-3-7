@@ -209,8 +209,15 @@ button {
         .box {
             flex: 0 0 50%;
             text-align: left;
+           
             p {
                 margin-bottom: 50px;
+            }
+            
+            .more-button {
+                &:hover {
+                    background-color: $color-grey;
+                }
             }
         }
     }
@@ -366,7 +373,7 @@ button {
                 background-color: $color-green;
                 display: flex;
                 border-radius: 0;
-                border: none;
+                border: solid 1px $color-green;
                 width: 100%;
                 border-bottom-right-radius: 2px;
                 border-bottom-left-radius: 2px;
@@ -375,6 +382,10 @@ button {
                 padding-right: 20px;
                 font-size: 12px;
                 align-items: flex-end;
+                &:hover {
+                    background-color: white;
+                    color: $color-green;
+                }
             }
         }
     }
@@ -382,6 +393,7 @@ button {
 }
 
 /* Map */
+
 .map {
 
     .row {
