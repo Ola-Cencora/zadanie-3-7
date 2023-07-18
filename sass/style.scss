@@ -450,3 +450,45 @@ button {
     }
 }
 
+/* Footer */
+
+.footer {
+    display: flex;
+    height: 90px;
+    align-items: center;
+
+    .footer-title {
+        flex: 0 0 33.333%;
+        font-size: 12px;
+        i {
+            color: $color-green;
+            margin-right: 10px;
+        }
+    }
+
+    .footer-nav {
+        flex: 0 0 66.666%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 120px;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin-left: 26px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 12px;
+                    &:hover {
+                        color: $color-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
